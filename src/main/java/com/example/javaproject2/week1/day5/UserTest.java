@@ -20,6 +20,6 @@ public class UserTest {
         System.out.printf("%s님은 성인입니까? %s\n", user2.name, user2.isAdult());
         System.out.printf("%s님은 성인입니까? %s\n", user3.name, user3.isAdult());
 
-
+        // merge test1
     }
 }
