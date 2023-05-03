@@ -1,4 +1,4 @@
-package com.example.javaproject2.codeup.Q_1071;
+package com.example.javaproject2.codeup.Q_1092;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,12 +9,15 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int a = 0;
-        do {
-            a = Integer.parseInt(st.nextToken());
-            if (a != 0) {
-                System.out.println(a);
-            }
-        } while (a != 0);
+        int a = Integer.parseInt(st.nextToken());
+        int b = Integer.parseInt(st.nextToken());
+        int c = Integer.parseInt(st.nextToken());
+
+        int day = 1;
+        while (day % a != 0 || day % b != 0 || day % c != 0) {
+            day++;
+        }
+        System.out.println(day);
+
     }
 }
